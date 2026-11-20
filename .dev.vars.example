@@ -1,0 +1,24 @@
+# Cloudflare Workers Local Development Environment Variables
+# Copy this to .dev.vars for local testing with `wrangler dev`
+
+# Cloudflare Turnstile Secret Key
+# The key below is Cloudflare's official "Always Passes" dummy testing secret key
+TURNSTILE_SECRET_KEY=1x0000000000000000000000000000000AA
+
+# Cloudflare Turnstile Site Key (for frontend rendering)
+# The key below is Cloudflare's official "Always Passes" dummy testing site key
+TURNSTILE_SITE_KEY=1x00000000000000000000AA
+
+# Administrator authorization
+# In production, Cloudflare Access sends the authenticated user's email via the `Cf-Access-Authenticated-User-Email` header
+# and JWT assertion via `Cf-Access-Jwt-Assertion`.
+# In local development or testing, you can specify authorized admin emails (comma-separated):
+ADMIN_ALLOWED_EMAILS=admin@example.edu,moderator@example.edu
+
+# Local development admin bypass token (optional, useful for local testing before setting up Cloudflare Access)
+ADMIN_DEV_SECRET=local-dev-admin-secret-token
+
+# Cloudflare Access Team Domain (e.g., https://your-team.cloudflareaccess.com)
+# Used to verify JWT public keys from https://<team>.cloudflareaccess.com/cdn-cgi/access/certs
+CF_ACCESS_TEAM_DOMAIN=https://example.cloudflareaccess.com
+CF_ACCESS_AUD=
