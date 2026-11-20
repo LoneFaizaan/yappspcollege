@@ -14,13 +14,13 @@
     {
       "binding": "DB",
       "database_name": "student_feedback_db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "441dd1f7-d344-4c53-bec2-a55f3b060b34",
       "migrations_dir": "migrations"
     }
   ],
   "vars": {
-    "ENVIRONMENT": "development",
+    "ENVIRONMENT": "production",
     "TURNSTILE_SITE_KEY": "1x00000000000000000000AA",
-    "ADMIN_ALLOWED_EMAILS": "admin@example.edu"
+    "ADMIN_ALLOWED_EMAILS": "faizanlone098@gmail.com"
   }
 }
